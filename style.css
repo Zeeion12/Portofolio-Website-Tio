@@ -1,0 +1,377 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #c4b19a;
+}
+section{
+    min-height: 85vh;
+}
+
+/* Sectio Homepage */
+.Home1{
+    margin-top: 20px;
+}
+/* Navbar */
+.Navbar1 {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.Navbar2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Popper', sans-serif;
+    font-size: 20px;
+    padding: 0 30px;
+    width: 100%;
+    height: 80px;
+    transition: all 0.4s ease-in-out;
+    /* Untuk mengatur ketika di scroll text tidak terpotong */
+    box-sizing: border-box;
+}
+.Logo {
+    font-size: 1.9em;
+    padding: 10px 0;
+    color: #806044;
+    font-weight: 800;
+}
+.Logo>span{
+    color: #102820c5;
+}
+.Navbar3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.Navbar3>li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+.Navbar3>li>a {
+    color: rgb(90, 73, 73);
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.Navbar3>li>a:hover {
+    color: #102820c5;
+    font-weight: 600;
+    transition: all .4s ease-in-out;
+}
+/* Navbar scroll */
+.scrolled .Navbar2{
+    position: fixed;
+    background: transparent;
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Welcome Text */
+.content_wrapper1{
+    /* Ini berguna untuk membuat foto berada disamping text */
+    position: relative;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+}
+.bgpost{
+    flex: 0 0 60%;
+    margin-left: 40px;
+    padding: 0 10px;
+}
+.Paraf{
+    color: #102820c5;
+    font-family: 'Popper', sans-serif;
+    font-size: 41px;
+}
+.Paraf>p {
+    font-size: 15px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+.Paraf>h2>span{
+    color: #806044;
+}
+
+/* Text Animation */
+.textcont {
+    background-color: #c4b19a;
+}
+.textcont>h2 {
+    color: #102820c5;
+}
+.textcont>h2>span{
+    color: #806044;
+}
+
+
+/* Social Button */
+.social_bton{
+    margin-top: 30px;
+}
+.social_bton>a>i{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    color: aliceblue;
+    background-color: #806044;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: all 0.4s ease-in-out;
+}
+.social_bton>a>i:hover{
+    transform: translateY(-3px);
+    color: #102820c5;
+    background-color: aliceblue;
+}
+
+/* Blob Profile */
+.wrapblob{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    margin-right: 40px;
+    margin-left: 70px;
+}
+.boxblob{
+    background: url(image/Tio2.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 380px;
+    width: 380px;
+    box-shadow: 0 20px 5px 5px rgba(0,0,0,0.2);
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+@keyframes animate {
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+/* Hire button */
+.hire_button,
+.hire_button *,
+.hire_button :after,
+.hire_button :before,
+.hire_button:after,
+.hire_button:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+/* .hire_button{
+  -webkit-tap-highlight-color: 
+transparent;
+  -webkit-appearance: button;
+  background-color: 
+#000;
+  background-image: none;
+  color: 
+#fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+} */
+.hire_button:disabled {
+  cursor: default;
+}
+.hire_button:-moz-focusring {
+  outline: auto;
+}
+.hire_button {
+    cursor: pointer;
+    display: block;
+    vertical-align: middle;
+}
+.hire_button[hidden] {
+  display: none;
+}
+.hire_button {
+    margin-top: 30px;
+  background: 
+#806044;
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  color: 
+aliceblue;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+.hire_button:hover {
+  box-shadow: 0 6px 0 -4px 
+#806044, 0 9px 0 -4px 
+#6a5038, 0 12px 0 -4px 
+#5a432e;
+  transform: translateY(-5px);
+}
+
+
+/* ====SECTION ABOUT ME PAGE==== */
+/* About Section */
+.content_wrapper2 {
+    /* Untuk mengatur posisi elemen ketengah */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.abt_wrap {
+    /* Untuk Mengatur posisi text dan image bersampingan */
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+}
+.img_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_box {
+    width: 100%;
+}
+.img_box > img {
+    height: 400px;
+    filter: drop-shadow(-30px 30px 20px rgba(0, 0, 0, 0.329));
+    transform: rotate(6deg); /* untuk mengatur rotasi foto */
+}
+.desc1 {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.desc1 > h2 {
+    font-family: "Popper", sans-serif;
+    font-size: 36px;
+    color: #102820c5;
+    margin-bottom: 20px;
+}
+.desc1 > p > span{
+    color: #806044;
+    font-weight: 700;
+}
+.desc1 > p {
+    width: 90%;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #102820c5;
+    line-height: 1.5;
+    font-weight: 500;
+}
+/* Animasi fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ====SECTION MY PROJECT PAGE==== */
+/* Project Section */
+
+/* Project Header */
+.project_head{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Popper", sans-serif;
+    color: #102820be;
+}
+/* Project Content */
+.project-card {
+    /* Fokus pada pembuatan background cardnya */
+    max-width: 310px;
+    width: 100%;
+    border-radius: 25px;
+    margin-top: 60px;
+    margin-left: 3%;
+    padding: 20px 30px 30px 30px; /* mengatur posisi elemen dalam card */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.329);
+    border: #102820c5 solid;
+}
+.pro-img {
+    position: relative;
+    height: 210px;
+}
+.pro-img img{
+    position: absolute;
+    width: 250px;
+    object-fit: cover;
+    top: 3px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.329);
+}
+.pro-head {
+    font-family: 'Popper', sans-serif;
+    color: #102820c5;
+}
+.pro-title {
+    font-size: 30px;
+    font-weight: 700;
+}
+.pro-head p {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 540;
+}
+.pro-button button {
+    position: relative;
+    height: 30px;
+    width: 100px;
+    color: aliceblue;
+    background-color: #806044;
+    border: aliceblue solid;
+    text-align: center;
+    margin-top: 20px;
+    transform: translateX(150px);
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+}
+.pro-button button:hover {
+    background-color: aliceblue;
+    color: #102820c5;
+    border: #102820c5 solid;
+}
+
+
+
+
