@@ -1,6 +1,6 @@
 // Text Animation
 var typed = new Typed(".autotext", {
-    strings : ["Frontend Developer.", "Web Designer.", "Youtuber" ],
+    strings : ["Fullstack Developer.", "Web Designer.", "Youtuber" ],
     typeSpeed : 100,
     backSpeed : 100,
     loop : true,

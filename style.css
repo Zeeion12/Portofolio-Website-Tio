@@ -371,7 +371,20 @@ aliceblue;
     color: #102820c5;
     border: #102820c5 solid;
 }
-
+/* Display card */
+.displayCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.displayCard2 {
+    margin-top: 20px;
+    margin-left: 122px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+}
 
 
 
