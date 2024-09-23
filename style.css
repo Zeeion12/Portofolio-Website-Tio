@@ -329,11 +329,11 @@ aliceblue;
     border: #102820c5 solid;
 }
 .pro-img {
-    position: relative;
+    /* position: relative; */
     height: 210px;
 }
 .pro-img img{
-    position: absolute;
+    /* position: absolute; */
     width: 250px;
     object-fit: cover;
     top: 3px;
