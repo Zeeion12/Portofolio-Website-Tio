@@ -9,10 +9,12 @@ body{
     background-color: #c4b19a;
 }
 section{
-    min-height: 85vh;
+    min-height: 10vh;
 }
 
-/* Sectio Homepage */
+/* Efek blob background */
+
+/* Section Homepage */
 .Home1{
     margin-top: 20px;
 }
@@ -81,7 +83,6 @@ section{
 .content_wrapper1{
     /* Ini berguna untuk membuat foto berada disamping text */
     position: relative;
-    height: 75vh;
     display: flex;
     align-items: center;
 }
@@ -244,6 +245,7 @@ aliceblue;
 
 /* ====SECTION ABOUT ME PAGE==== */
 /* About Section */
+
 .content_wrapper2 {
     /* Untuk mengatur posisi elemen ketengah */
     display: flex;
@@ -327,6 +329,7 @@ aliceblue;
     padding: 20px 30px 30px 30px; /* mengatur posisi elemen dalam card */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.329);
     border: #102820c5 solid;
+    background-color: #E6D7C3;
 }
 .pro-img {
     /* position: relative; */
