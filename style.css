@@ -9,7 +9,7 @@ body{
     background-color: #c4b19a;
 }
 section{
-    min-height: 10vh;
+    min-height: 80vh;
 }
 
 /* Efek blob background */
@@ -310,13 +310,21 @@ aliceblue;
 
 /* ====SECTION MY PROJECT PAGE==== */
 /* Project Section */
-
+.content_wrapper3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
 /* Project Header */
 .project_head{
     text-align: center;
     font-size: 30px;
     font-family: "Popper", sans-serif;
     color: #102820be;
+    margin-bottom: 20px; 
 }
 /* Project Content */
 .project-card {
@@ -324,8 +332,8 @@ aliceblue;
     max-width: 310px;
     width: 100%;
     border-radius: 25px;
-    margin-top: 60px;
-    margin-left: 3%;
+    margin-top: 40px;
+    
     padding: 20px 30px 30px 30px; /* mengatur posisi elemen dalam card */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.329);
     border: #102820c5 solid;
@@ -382,11 +390,27 @@ aliceblue;
 }
 .displayCard2 {
     margin-top: 20px;
-    margin-left: 122px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     width: 80%;
+}
+
+
+/* ====SECTION SKILL PAGE==== */
+.content_wrapper4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: blueviolet;
+}
+.skill_head {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Popper", sans-serif;
+    color: #102820be;
 }
 
 
