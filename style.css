@@ -6,13 +6,15 @@
     scroll-behavior: smooth;
 }
 body{
-    background-color: #c4b19a;
+    background-image: url(image/BlobBG.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 section{
     min-height: 80vh;
 }
-
-/* Efek blob background */
 
 /* Section Homepage */
 .Home1{
@@ -401,16 +403,66 @@ aliceblue;
 .content_wrapper4{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
-    background-color: blueviolet;
+    align-items: center;
 }
-.skill_head {
+.skill_head{
+    position: relative;
+    top: 100px;
     text-align: center;
     font-size: 30px;
     font-family: "Popper", sans-serif;
     color: #102820be;
+    margin-bottom: 20px; 
+}
+/* Card Icon */
+.skill-wrapper{
+    margin: 20px 0px 0px 20px;
+    width: 100%;
+    max-width: 500px;
+}
+.skill-icon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 94%;
+}
+.skill-item{
+    position: relative;
+    top: 200px;
+    margin: 0px 20px 40px 20px; 
+}
+.skill-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E6D7C3;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+}
+.skill-item p {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #102820c5;
+    margin-top: 10px;
+}
+
+/* Icon animation */
+.skill-img:hover {
+    transform: translatey(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.329);
+}
+
+/* ====SECTION CONTACT==== */
+.content_wrapper5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 
