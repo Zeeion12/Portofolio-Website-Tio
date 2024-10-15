@@ -188,68 +188,56 @@ section{
 }
 
 /* Hire button */
-.hire_button,
-.hire_button *,
-.hire_button :after,
-.hire_button :before,
-.hire_button:after,
-.hire_button:before {
-  border: 0 solid;
-  box-sizing: border-box;
-}
-/* .hire_button{
-  -webkit-tap-highlight-color: 
-transparent;
-  -webkit-appearance: button;
-  background-color: 
-#000;
-  background-image: none;
-  color: 
-#fff;
-  cursor: pointer;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
-    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  font-size: 100%;
-  line-height: 1.5;
-  margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
-  padding: 0;
-} */
-.hire_button:disabled {
-  cursor: default;
-}
-.hire_button:-moz-focusring {
-  outline: auto;
+
+.button-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns buttons to the left */
+    align-items: center; /* Vertically centers the buttons */
+    margin-top: 40px;
 }
 .hire_button {
     cursor: pointer;
     display: block;
     vertical-align: middle;
+    background: #806044;
+    border: 1px solid;
+    border-radius: 999px;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-weight: 900;
+    overflow: hidden;
+    padding: 1.2rem 3rem;
+    position: relative;
+    text-transform: uppercase;
+    transition: 0.2s;
+    margin-right: 20px; /* Add space between buttons */
 }
-.hire_button[hidden] {
-  display: none;
-}
-.hire_button {
-    margin-top: 30px;
-  background: 
-#806044;
-  border: 1px solid;
-  border-radius: 999px;
-  box-sizing: border-box;
-  color: 
-aliceblue;
-  display: block;
-  font-weight: 900;
-  -webkit-mask-image: none;
-  overflow: hidden;
-  padding: 1.2rem 3rem;
-  position: relative;
-  text-transform: uppercase;
-  transition: 0.2s;
-}
+
 .hire_button:hover {
   box-shadow: 0 6px 0 -4px 
+#806044, 0 9px 0 -4px 
+#6a5038, 0 12px 0 -4px 
+#5a432e;
+  transform: translateY(-5px);
+}
+.cv-dwnld {
+    cursor: pointer;
+    display: block;
+    vertical-align: middle;
+    background: #806044;
+    border: 1px solid;
+    border-radius: 999px;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-weight: 900;
+    overflow: hidden;
+    padding: 1.2rem 3rem;
+    position: relative;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+.cv-dwnld:hover {
+    box-shadow: 0 6px 0 -4px 
 #806044, 0 9px 0 -4px 
 #6a5038, 0 12px 0 -4px 
 #5a432e;
