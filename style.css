@@ -55,23 +55,34 @@ section{
     margin: 0;
     padding: 0;
 }
-.Navbar3>li {
+.Navbar3 li {
     list-style-type: none;
     display: inline-block;
     padding: 10px 20px;
 }
-.Navbar3>li>a {
+.Navbar3 a{
+    position: relative; /*Berfungsi agar background di Navbar3 before berada dibawah text */
     color: rgb(90, 73, 73);
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     text-transform: capitalize;
     font-weight: 600;
 }
-.Navbar3>li>a:hover {
-    color: #102820c5;
-    font-weight: 600;
-    transition: all .4s ease-in-out;
+/* Mengatur Animasi Navbar */
+.Navbar3 a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #102820be;
+    transition: .3s;
 }
+.Navbar3 a:hover::before {
+    width: 100%;
+} 
+
 /* Navbar scroll */
 .scrolled .Navbar2{
     position: fixed;
@@ -102,6 +113,7 @@ section{
     font-size: 15px;
     margin-top: 15px;
     font-weight: 500;
+    width: 80%;
 }
 .Paraf>h2>span{
     color: #806044;
@@ -153,7 +165,7 @@ section{
     margin-left: 70px;
 }
 .boxblob{
-    background: url(image/Tio2.jpg);
+    background: url(image/Tio5.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -463,6 +475,15 @@ aliceblue;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+.cont_head {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Popper", sans-serif;
+    color: #102820be;
+    margin-bottom: 20px; 
 }
 
 
