@@ -520,6 +520,7 @@ section{
     background-color: #c4b19a;
     color: #102820be;
     outline: none;
+    resize: none;
 }
 .contact-form1 textarea::placeholder{
     font-family: 'Poppins', sans-serif;
