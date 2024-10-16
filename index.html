@@ -227,7 +227,8 @@
             <!-- Contact Form -->
             <div class="contact-form">
                 <h2>Get In Touch</h2>
-                <form class="contact-form1">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form1">
+                    <input type="hidden" name="access_key" value="8fa32970-58a9-42cf-b47b-b8586c1ad19f">
                     <div class="input-box">
                         <i class='bx bxs-user' ></i>
                         <input type="text" placeholder="Your Name" required> 
@@ -237,8 +238,8 @@
                         <input type="email" placeholder="Your Email" required>
                     </div>
                     <textarea name="message" id="mseg" placeholder="Message" required></textarea>
+                    <button type="submit">Submit</button>
                 </form>
-                <button type="submit">Submit</button>
             </div>
         </div>
      </section>

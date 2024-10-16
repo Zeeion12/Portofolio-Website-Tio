@@ -469,12 +469,14 @@ section{
     max-width: 450px;
     padding: 30px;
     border-radius: 20px;
+    text-align: center;
 }
 .contact-form h2 {
     font-size: 30px;
     font-family: "Popper", sans-serif;
     color: #102820be;
     margin-bottom: 20px;
+    text-align: start;
 }
 .contact-form1 input {
     width: 100%;
@@ -485,8 +487,10 @@ section{
     background-color: #c4b19a;
     color: #102820be;
     outline: none;
+    font-family: 'Poppins', sans-serif;
 }
 .input-box input::placeholder {
+    font-family: 'Poppins', sans-serif;
     color: #102820be;
 }
 .input-box {
@@ -509,7 +513,7 @@ section{
 
 .contact-form1 textarea {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding: 8px 0px 60px 10px;
     border-radius: 10px;
     border: none;
@@ -517,20 +521,29 @@ section{
     color: #102820be;
     outline: none;
 }
+.contact-form1 textarea::placeholder{
+    font-family: 'Poppins', sans-serif;
+    color: #102820be;
+}
 .contact-form1 textarea:focus {
     border: 2px solid #806044;
 }
 .contact-form button {
     position: relative;
-    height: 30px;
+    height: 40px;
     width: 100px;
     background-color: #806044;
     border: none;
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    transform: translateX(150px);
+    
+    transition: all 0.4s ease-in-out;
 }
+.contact-form button:hover{
+    transform: translateY(-5px);
+}
+
 
 
 
