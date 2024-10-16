@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- Icon web -->
     <link rel="icon" type="image/png" href="">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Icon Social -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
@@ -227,12 +228,18 @@
             <div class="contact-form">
                 <h2>Get In Touch</h2>
                 <form class="contact-form1">
-                    <input type="text" placeholder="Your Name"> <br>
-                    <input type="email" placeholder="Your Email"> <br>
-                    <textarea name="message" id="mseg" placeholder="Message"></textarea>
+                    <div class="input-box">
+                        <i class='bx bxs-user' ></i>
+                        <input type="text" placeholder="Your Name" required> 
+                    </div>
+                    <div class="input-box">
+                        <i class='bx bx-at'></i>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <textarea name="message" id="mseg" placeholder="Message" required></textarea>
                 </form>
+                <button type="submit">Submit</button>
             </div>
-
         </div>
      </section>
 
