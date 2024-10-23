@@ -1,6 +1,6 @@
 // Text Animation
 var typed = new Typed(".autotext", {
-    strings : ["Fullstack Developer.", "Web Designer.", "Youtuber" ],
+    strings : ["Fullstack Developer.", "Web Designer."],
     typeSpeed : 100,
     backSpeed : 100,
     loop : true,
@@ -34,5 +34,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     fadeIns.forEach(fadeIn => {
         observer.observe(fadeIn);
+    });
+});
+
+// Navbar toogle
+// Mobile menu toggle
+const menuIcon = document.getElementById('menu-icon');
+const navMenu = document.getElementById('nav-menu');
+
+menuIcon.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+});
+
+// Close menu when clicking a link
+const navLinks = document.querySelectorAll('.Navbar3 a');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
     });
 });

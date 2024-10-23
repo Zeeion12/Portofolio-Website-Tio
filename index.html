@@ -28,12 +28,15 @@
     <div id="Navbar0" class="Navbar1">
         <nav class="Navbar2">
             <h2 class="Logo">Port<span>folio</span></h2>
-            <ul class="Navbar3">
+            <ul class="Navbar3" id="nav-menu">
                 <li><a href="#Navbar0" title="Back to homepage">Home</a></li>
                 <li><a href="#About" title="Want to know more about me?">About</a></li>
                 <li><a href="#Project" title="My work">Project</a></li>
                 <li><a href="#Skill" title="My Skill">Skill</a></li>
             </ul>
+            <label for="menu-toggle" class="icons">
+                <i class='bx bx-menu' id="menu-icon" style='color:#806044'></i>
+            </label>
         </nav>
     </div>
 
@@ -195,26 +198,26 @@
                         <p>JavaScript</p>
                     </div>
                     <!-- PHP -->
-                    <!-- <div class="skill-item">
+                    <div class="skill-item">
                         <div class="skill-img">
                             <img src="Logo/php.png" alt="PHP" width="50px">
                         </div>
                         <p>PHP</p>
-                    </div> -->
+                    </div>
                     <!-- Bootstrap -->
-                    <!-- <div class="skill-item">
+                    <div class="skill-item">
                         <div class="skill-img">
                             <img src="Logo/bootstrap.png" alt="Bootstrap" width="50px">
                         </div>
                         <p>Bootstrap</p> 
-                    </div> -->
+                    </div>
                     <!-- TypeScript -->
-                    <!-- <div class="skill-item">
+                    <div class="skill-item">
                         <div class="skill-img">
                             <img src="Logo/typescript.png" alt="TypeScript" width="50px">
                         </div>
                         <p>TypeScript</p> 
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -238,7 +241,7 @@
                         <input type="email" placeholder="Your Email" required>
                     </div>
                     <textarea name="message" id="mseg" placeholder="Message" required></textarea>
-                    <button type="submit">
+                    <button type="submit" class="btn">
                         <span class="sendmsg"> Send </span>
                     </button>
                 </form>

@@ -32,12 +32,12 @@ section{
     align-items: center;
     font-family: 'Popper', sans-serif;
     font-size: 20px;
-    padding: 0 30px;
+    padding: 0 20px;
     width: 100%;
     height: 80px;
     transition: all 0.4s ease-in-out;
     /* Untuk mengatur ketika di scroll text tidak terpotong */
-    box-sizing: border-box;
+
 }
 .Logo {
     font-size: 1.9em;
@@ -82,6 +82,13 @@ section{
 .Navbar3 a:hover::before {
     width: 100%;
 } 
+
+.icons {
+    display: none;
+    font-size: 3rem;
+    cursor: pointer;
+    
+}
 
 /* Navbar scroll */
 .scrolled .Navbar2{
@@ -531,38 +538,327 @@ section{
     border: 2px solid #806044;
 }
 .contact-form button {
-    --button_radius: 0.75em;
-    --button_color: #e8e8e8;
-    --button_outline_color: #806044;
-    font-size: 17px;
-    font-weight: bold;
-    border: none;
     cursor: pointer;
-    border-radius: var(--button_radius);
-    background: var(--button_outline_color);
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    border-radius: 34px;
+    background-color: #102820be;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
 }
-.sendmsg {
-    display: block;
-    box-sizing: border-box;
-    border: 2px solid var(--button_outline_color);
-    border-radius: var(--button_radius);
-    padding: 0.75em 1.5em;
-    background: var(--button_color);
-    color: var(--button_outline_color);
-    transform: translateY(-0.2em);
-    transition: transform 0.1s ease;
+.contact-form button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #806044;
+    transition: all 0.9s cubic-bezier(0.23, 1, 0.320, 1);
+  }  
+.btn:hover::before {
+    scale: 3;
 }
-.contact-form button:hover .sendmsg {
-    /* Pull the button upwards when hovered */
-    transform: translateY(-0.33em);
+  
+.btn:hover {
+    color: aliceblue;
+    scale: 1.1;
+    box-shadow: 0 0px 20px #806044;
+    border: 2px solid aliceblue;
 }
-.contact-form button:active .sendmsg {
-    /* Push the button downwards when pressed */
-    transform: translateY(0);
+
+.btn:active {
+    scale: 1;
 }
 .vector {
     margin-left: 150px;
     transform: translateY(-25px);
+}
+
+
+/* Responsive */
+/* ... existing code ... */
+
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+    section {
+        min-height: 100vh;
+        padding: 60px 0;  /* Slightly reduce padding on smaller screens */
+    }
+    
+
+    /* Adjust specific section heights */
+    .Home2 .content_wrapper2 {
+        margin-top: 40px;
+    }
+
+    .Home3 .content_wrapper3 {
+        margin-top: 20px;
+    }
+
+    .Home4 .content_wrapper4 {
+        margin-top: 0;
+    }
+    
+    /* Homepage */
+    .content_wrapper1 {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .bgpost {
+        margin: 20px auto;
+        flex: none;
+    }
+
+    .Paraf > p {
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    .social_bton {
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .button-container {
+        justify-content: center;
+    }
+
+    .wrapblob {
+        margin: 40px auto;
+        height: auto;
+    }
+
+    /* About Section */
+    .abt_wrap {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .img_box > img {
+        height: 300px;
+    }
+
+    .desc1 {
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .desc1 > p {
+        width: 100%;
+    }
+
+    /* Project Section */
+    .Home3{
+        margin-top: 200px;
+    }
+    .displayCard2 {
+        flex-wrap: wrap; /* berguna sebagai pengaturan posisi card */
+        width: 100%;
+        gap: 30px;
+    }
+
+    .project-card {
+        margin: 20px auto;
+    }
+
+    /* Skill Section */
+    .Home4{
+        margin-top: 200px;
+    }
+    .skill-icon {
+        gap: 20px;
+    }
+
+    /* Contact Section */
+    .Home5{
+        margin-top: 200px;
+    }
+    .vector {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 40px 0; 
+    }
+
+    .fade-in {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .fade-in.visible {
+        opacity: 1;
+        transform: none;
+    }
+
+    /* Navbar */
+    .Navbar3 {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        backdrop-filter: blur(50px);
+        padding: 20px;
+    }
+
+    .Navbar3.active {
+        display: block;
+    }
+
+    .Navbar3 li {
+        display: block;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .icons {
+        display: block;
+    }
+
+    /* Homepage */
+    .Paraf {
+        font-size: 32px;
+    }
+
+    .boxblob {
+        height: 300px;
+        width: 300px;
+    }
+
+    /* About Section */
+    .img_box > img {
+        height: 250px;
+    }
+
+    /* Project Section */
+    .Home3{
+        margin-top: 600px;
+    }
+    .project-card {
+        max-width: 280px;
+    }
+
+    /* Skill Section */
+    .Home4{
+        margin-top: 400px;
+    }
+    .skill_head {
+        top: 0;
+        margin-bottom: 40px;
+    }
+    .skill-item {
+        top: 0;
+        margin: 0 10px 30px 10px;
+    }
+
+    .skill-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* Contact Section */
+    .contact-form {
+        margin: 0 20px;
+    }
+    .vector{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section{
+        padding: 30px 0;
+    }
+
+    .fade-in {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .fade-in.visible {
+        opacity: 1;
+        transform: none;
+    }
+
+    /* Homepage */
+    .Paraf {
+        font-size: 28px;
+    }
+
+    .boxblob {
+        display: none;
+    }
+
+    .social_bton{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+    }
+
+    .hire_button
+    .cv-dwnld:hover {
+        box-shadow: 0 6px 0 -4px 
+    #806044, 0 9px 0 -4px 
+    #6a5038, 0 12px 0 -4px 
+    #5a432e;
+      transform: translateY(-5px);
+    }
+
+    .hire_button,
+    .cv-dwnld {
+        margin-top: 10px;
+        padding: 1rem 2rem;
+        font-size: 14px;
+    }
+
+    /* About Section */
+    .img_box > img {
+        height: 200px;
+    }
+
+    /* Project Section */
+    .Home3{
+        margin-top: 600px;
+    }
+    .project-card {
+        max-width: 240px;
+        
+    }
+    
+
+    /* Skill Section */
+    .Home4{
+        margin-top: 600px;
+    }
+    .skill-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .skill-item p {
+        font-size: 14px;
+    }
+    
+    /* Hire Section */
+    .vector {
+        display: none;
+    }
 }
 
 
