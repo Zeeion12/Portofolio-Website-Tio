@@ -93,8 +93,9 @@ section{
 /* Navbar scroll */
 .scrolled .Navbar2{
     position: fixed;
-    background: transparent;
-    backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     z-index: 1000;
     transition: all 0.4s ease-in-out;
 }
@@ -350,10 +351,17 @@ section{
 }
 .pro-img {
     /* position: relative; */
-    height: 210px;
+    height: auto; /* Changed from fixed height */
+    width: 100%; /* Added to ensure image container is responsive */
+    display: flex; /* Added to center the image */
+    justify-content: center;
+    /* height: 210px; */
 }
 .pro-img img{
     /* position: absolute; */
+    width: 100%; /* Changed from fixed width */
+    max-width: 250px; /* Added to maintain maximum size */
+    height: auto;
     width: 250px;
     object-fit: cover;
     top: 3px;
@@ -382,7 +390,8 @@ section{
     border: aliceblue solid;
     text-align: center;
     margin-top: 20px;
-    transform: translateX(150px);
+    transform: translateX(0); /* Remove fixed transform */
+    float: right;
     border-radius: 10px;
     transition: all 0.4s ease-in-out;
 }
@@ -681,9 +690,6 @@ section{
     }
 
     /* Contact Section */
-    .Home5{
-        margin-top: 200px;
-    }
     .vector {
         display: none;
     }
@@ -712,12 +718,20 @@ section{
         top: 80px;
         left: 0;
         width: 100%;
-        backdrop-filter: blur(50px);
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         padding: 20px;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-
     .Navbar3.active {
         display: block;
+    }
+    .scrolled .Navbar2 {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
     }
 
     .Navbar3 li {
@@ -751,6 +765,17 @@ section{
     }
     .project-card {
         max-width: 280px;
+    }
+    .pro-img img {
+        max-width: 220px; /* Slightly smaller max-width for smaller screens */
+    }
+    .pro-button button {
+        width: 90px; /* Slightly smaller button */
+        height: 28px; /* Slightly smaller button */
+        font-size: 14px; /* Smaller font size */
+    }
+    .pro-title{
+        margin-top: 20px;
     }
 
     /* Skill Section */
@@ -797,6 +822,11 @@ section{
     }
 
     /* Homepage */
+    .Navbar3 {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
     .Paraf {
         font-size: 28px;
     }
@@ -806,9 +836,7 @@ section{
     }
 
     .social_bton{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:space-evenly;
+        display: none;
     }
 
     .hire_button
@@ -838,9 +866,21 @@ section{
     }
     .project-card {
         max-width: 240px;
-        
+        padding: 15px 20px 20px 20px; /* Smaller padding */
     }
     
+    .pro-img img {
+        max-width: 200px; /* Even smaller max-width for mobile */
+    }
+    
+    .pro-button button {
+        width: 80px; /* Smaller button for mobile */
+        height: 26px;
+        font-size: 12px;
+    }
+    .pro-title{
+        margin-top: 20px;
+    }
 
     /* Skill Section */
     .Home4{
@@ -856,6 +896,9 @@ section{
     }
     
     /* Hire Section */
+    .Home5 {
+        margin-top: -200px;
+    }
     .vector {
         display: none;
     }
